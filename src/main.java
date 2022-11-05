@@ -10,8 +10,8 @@ public class main {
 
        ExporterContext exporterContext = new ExporterContext(new CSVExporter());
        exporterContext.doExport(articles);
-       // exporterContext.setExporter(new JSONExporter());
-       // exporterContext.doExport(articles);
+       exporterContext.setExporter(new JSONExporter());
+       exporterContext.doExport(articles);
 
     }
 }
