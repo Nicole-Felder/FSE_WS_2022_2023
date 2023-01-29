@@ -9,6 +9,9 @@ public interface StudentenService {
     List<Student> alleStudenten();
     Student studentEinfuegen(Student student);
     Student studenMitId(Long id) throws StudentNichtGefunden;
+
+    Student studentMitId(Long id) throws StudentNichtGefunden;
+
     List<Student> alleStudentenMitPlz(String plz);
     void studentLoeschenMitId(Long id);
 }
