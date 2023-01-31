@@ -35,15 +35,12 @@ public class DbZugriffStudentenJPA implements DbZugriffStudenten {
 
     @Override
     public Student studentMitId(Long id) throws StudentNichtGefunden {
-        Optional<Student> optStudent =  this.studentJPARepo.findById(id);
-        if (optStudent.isPresent())
-        {
+        Optional<Student> optStudent = this.studentJPARepo.findById(id);
+        if (optStudent.isPresent()) {
             return optStudent.get();
         } else {
-            throw new StudentNichtGefunden("Student mit der Id " + id + " nicht gefunden!");
+            throw new StudentNichtGefunden("Student mit der It " + id + " nicht gefunden!");
         }
-
-
     }
 
     @Override

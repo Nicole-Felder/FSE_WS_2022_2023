@@ -27,6 +27,11 @@ public class StudentServiceTmpl implements StudentenService{
     }
 
     @Override
+    public Student studenMitId(Long id) throws StudentNichtGefunden {
+        return null;
+    }
+
+    @Override
     public Student studentMitId(Long id) throws StudentNichtGefunden {
         return this.dbZugriffStudenten.studentMitId(id);
     }
